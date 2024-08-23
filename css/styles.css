@@ -48,76 +48,71 @@
 }
 
 
-
 #loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Slightly darkened overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-    text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  text-align: center;
 }
 
 .loading-content {
-    max-width: 80%;
-    background: rgba(255, 255, 255, 0.95); /* Slightly opaque white */
-    border-radius: 12px;
-    padding: 25px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    position: relative;
+  max-width: 80%;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 .loader {
-    border: 12px solid #e0e0e0;
-    border-top: 12px solid #8e8e8e; /* Soft, muted color for the loader */
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    animation: spin 2s linear infinite;
-    margin: 0 auto 15px;
+  border: 12px solid #e0e0e0;
+  border-top: 12px solid #8e8e8e;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto 15px;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 h1 {
-    font-size: 28px;
-    margin: 15px 0;
-    color: #555; /* Soft gray for the heading */
-    animation: fadeIn 1s ease-in-out;
+  font-size: 28px;
+  margin: 15px 0;
+  color: #555;
 }
 
 p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666; /* Muted text color */
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
 }
 
 #countdown {
-    font-size: 64px; /* Large but subtle font size */
-    font-weight: bold;
-    color: #7d8c8d; /* Soft, muted color */
-    margin-top: 20px;
-    animation: bounce 1s infinite;
+  font-size: 64px;
+  font-weight: bold;
+  color: #7d8c8d;
+  margin-top: 20px;
+  animation: bounce 1s infinite;
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
 #content {
-    /* Ensure content is visible behind the loading screen but hidden initially */
-    display: block;
-    visibility: hidden; /* Hide content behind the loading screen */
-    position: relative; /* Make sure it sits behind the loading overlay */
+  display: none;
+  visibility: hidden;
 }
 
 

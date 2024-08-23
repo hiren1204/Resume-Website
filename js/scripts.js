@@ -45,27 +45,27 @@
     
 })(jQuery);
 
+
 window.addEventListener('load', function() {
     var loadingMessage = document.getElementById('loading');
     var content = document.getElementById('content');
     var countdownElement = document.getElementById('countdown');
-    var countdownValue = 5; // Start countdown from 5
+    var countdownValue = 10;
 
-    // Update countdown every second
     var countdownInterval = setInterval(function() {
         countdownValue--;
         countdownElement.textContent = countdownValue;
 
-        // When countdown reaches 0, hide loading message and show content
         if (countdownValue <= 0) {
-            clearInterval(countdownInterval); // Stop the countdown
-            loadingMessage.style.opacity = '0'; // Fade out the loading screen
+            clearInterval(countdownInterval);
+            loadingMessage.style.opacity = '0';
             setTimeout(function() {
                 loadingMessage.style.display = 'none';
-                content.style.visibility = 'visible'; // Show content
-            }, 500); // Delay to allow fade-out effect
+                content.style.visibility = 'visible';
+            }, 500);
         }
-    }, 1000); // 
+    }, 1000);
 });
+
 
 // End of use strict
