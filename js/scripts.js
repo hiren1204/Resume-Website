@@ -50,7 +50,7 @@ window.addEventListener('load', function() {
     var loadingMessage = document.getElementById('loading');
     var content = document.getElementById('content');
     var countdownElement = document.getElementById('countdown');
-    var countdownValue = 10;
+    var countdownValue = 5;
 
     var countdownInterval = setInterval(function() {
         countdownValue--;
