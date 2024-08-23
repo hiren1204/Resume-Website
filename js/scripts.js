@@ -45,8 +45,7 @@
     
 })(jQuery);
 
-    window.addEventListener('load', function() {
-
+window.addEventListener('load', function() {
     var loadingMessage = document.getElementById('loading');
     var content = document.getElementById('content');
     var countdownElement = document.getElementById('countdown');
@@ -68,4 +67,5 @@
         }
     }, 1000); // 
 });
+
 // End of use strict
