@@ -111,10 +111,6 @@ p {
   50% { transform: translateY(-10px); }
 }
 
-#content {
-  display: none;
-  visibility: hidden;
-}
 
 
 
